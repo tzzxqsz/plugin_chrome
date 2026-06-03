@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Toolkit - 隐私政策 (Privacy Policy)</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #3c4043;
+            --heading-color: #202124;
+            --bg-color: #ffffff;
+            --section-bg: #f8f9fa;
+            --border-color: #dadce0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 28px;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+        }
+
+        .update-date {
+            color: #70757a;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 20px;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            font-weight: 500;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 0 0 24px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        .highlight-box {
+            background-color: var(--section-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            margin-top: 64px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+            font-size: 13px;
+            color: #70757a;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Developer Toolkit 隐私政策</h1>
+            <div class="update-date">最近更新日期：2026 年 6 月 3 日</div>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>核心隐私承诺：</strong></p>
+            <p>本插件（Developer Toolkit / DevTools Toolbox）坚决捍卫用户的数据隐私。我们的核心宗旨是：<strong>所有数据完全留在本地，绝不上传云端。</strong> 本插件不设任何后端服务器，亦不包含任何第三方追踪或统计 SDK。</p>
+        </div>
+
+        <h2>1. 数据收集与处理声明</h2>
+        <p>当您使用本插件集成的一系列开发辅助工具（包括但不限于：SQL 格式化、JWT 解码、正则表达式测试、UUID 生成、时间戳转换、代码比对、代码行数计算、Markdown 预览等）时，您的数据流向声明如下：</p>
+        <ul>
+            <li><strong>完全本地化运算：</strong> 您在各功能输入框中粘贴、输入的任何敏感代码、文本、Token 或数据库语句，均由您的浏览器在本地实时处理，完全不经过任何远程服务器传输。</li>
+            <li><strong>不收集个人隐私：</strong> 我们不会收集您的姓名、电子邮箱、设备信息、IP 地址或任何形式的网页浏览历史（Browsing History）。</li>
+        </ul>
+
+        <h2>2. 权限声明及最小权限原则</h2>
+        <p>为了保障各项独立工具合并后的正常运转，本插件在 <code>manifest.json</code> 中声明了以下必要权限。我们严格将权限用途限制在以下范围内：</p>
+        <ul>
+            <li><strong>clipboardWrite（剪贴板写入权限）：</strong> 仅在您主动点击工具内的“复制”按钮时触发。用于将格式化后的 SQL、新生成的 UUID、或解码后的 JWT 负载等结果安全地复制到您的系统剪贴板中。</li>
+            <li><strong>storage（本地存储权限）：</strong> 仅用于在您的浏览器本地缓存用户的偏好设置（如代码比对的主题颜色、常用配置）以及部分工具的临时文本占位，以便您下次打开插件时能够无缝继续工作。</li>
+            <li><strong>contextMenus（右键菜单权限）：</strong> 用于在浏览器中注册快捷右键菜单（例如：右键一键格式化选中的 SQL 语句或一键转换选中时间戳），减少切换插件的步骤。</li>
+            <li><strong>activeTab（当前标签页响应权限）：</strong> 仅在您通过点击插件图标或使用右键菜单时临时激活，用于使插件安全地响应当前网页的上下文，不用于任何后台常驻网页监听。</li>
+        </ul>
+
+        <h2>3. 外部服务与第三方共享</h2>
+        <p>本插件是一款纯净的本地效率工具箱：</p>
+        <ul>
+            <li>不包含任何形式的第三方广告、联盟链接或内购组件。</li>
+            <li>绝不向任何第三方机构、公司或个人出售、共享或披露您的任何数据。</li>
+            <li>后续计划更新的功能（如 JSON Formatter、Base64 编解码、Hash 生成器等）将继续贯彻 100% 本地封装与运行的原则。</li>
+        </ul>
+
+        <h2>4. 政策变更与迭代</h2>
+        <p>随着插件功能的持续丰富与版本迭代，本隐私政策可能会进行细节更新。然而，无论插件如何升级，<strong>“不收集、不传输、不上传用户任何输入数据”</strong>的最高隐私准则将永远保持不变。如果发生重大变更，我们将在插件更新日志中显著向用户说明。</p>
+
+        <h2>5. 联系与反馈</h2>
+        <p>如果您对本隐私政策或本插件的数据处理方式有任何疑问、意见或建议，请随时通过 Chrome 网上应用店（Chrome Web Store）的“支持”与“反馈”板块与我们取得联系。</p>
+
+        <div class="footer">
+            © 2026 Developer Toolkit 开发者团队. 保留所有权利。
+        </div>
+    </div>
+
+</body>
+</html>
